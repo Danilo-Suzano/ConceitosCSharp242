@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
 
 /*
  * comentário em bloco
@@ -28,3 +28,22 @@ else
 //modifique o código para que diferencie o Pode Votar do Deve Votar
 
 
+int[] multiplos = new int[10];
+int indice = 0;
+for (int divisor = 2; divisor < multiplos.Length; divisor++)
+{
+    if (idade % divisor == 0) 
+    {
+        multiplos[indice] = divisor;
+        indice++;
+    }
+        
+        
+    
+
+}
+foreach(int multiplo in multiplos)
+{
+    if (multiplo != 0)
+    Console.Write($" {multiplo} - ");
+}
